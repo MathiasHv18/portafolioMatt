@@ -44,9 +44,6 @@ app.get("/download", (req, res) => {
   res.download(file);
 });
 
-const server = app.listen(port, () => {
+app.listen(port, () => {
   console.log(`Servidor en puerto http://localhost:${server.address().port}`);
-});
-app.get("/api/port", (req, res) => {
-  res.json(process.env.PORT);
 });
