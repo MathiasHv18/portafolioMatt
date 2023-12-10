@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const port = process.env.NUMBER_PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.post("/send-email", (req, res) => {
   const { name, phone, message, email } = req.body;
@@ -44,6 +44,6 @@ app.get("/download", (req, res) => {
   res.download(file);
 });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`Servidor en puerto X`);
 });
