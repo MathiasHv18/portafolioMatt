@@ -172,7 +172,7 @@ export default {
       const email = this.email;
 
       axios
-        .post("http://localhost:3000/send-email", {
+        .post(`http://localhost:2000/send-email`, {
           name,
           phone,
           message,
@@ -186,7 +186,7 @@ export default {
         });
     },
     downloadCV() {
-      window.location.href = "http://localhost:3000/download";
+      window.location.href = `http://localhost:2000/download`;
     },
   },
 };

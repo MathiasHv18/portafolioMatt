@@ -2,10 +2,13 @@ import express from "express";
 import nodemailer from "nodemailer";
 import cors from "cors";
 import dotenv from "dotenv";
+dotenv.config();
+
 const app = express();
 app.use(cors());
-
 app.use(express.json());
+
+const port = process.env.NUMBER_PORT || 3000;
 
 app.post("/send-email", (req, res) => {
   const { name, phone, message, email } = req.body;
@@ -41,6 +44,9 @@ app.get("/download", (req, res) => {
   res.download(file);
 });
 
-app.listen(3000, () => {
-  console.log("Servidor en puerto 3000");
+const server = app.listen(port, () => {
+  console.log(`Servidor en puerto http://localhost:${server.address().port}`);
+});
+app.get("/api/port", (req, res) => {
+  res.json(process.env.PORT);
 });
