@@ -172,7 +172,7 @@ export default {
       const email = this.email;
 
       axios
-        .post(`http://mathiashualtibamba.pages.dev:2000/send-email`, {
+        .post(`https://mathiashualtibamba.pages.dev:2000/send-email`, {
           name,
           phone,
           message,
@@ -186,7 +186,7 @@ export default {
         });
     },
     downloadCV() {
-      window.location.href = `http://mathiashualtibamba.pages.dev:2000/download`;
+      window.location.href = `https://mathiashualtibamba.pages.dev:2000/download`;
     },
   },
 };
