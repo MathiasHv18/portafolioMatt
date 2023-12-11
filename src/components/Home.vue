@@ -4,8 +4,8 @@
       <img src="../assets/logo.jpg" alt="logoProfile" id="logoMatt" />
       <ul class="links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#aboutMe">About me</a></li>
-        <li><a href="MyProjects.vue">My projects</a></li>
+        <!-- <li><a href="#aboutMe">About me</a></li>-->
+        <li><a href="#aboutMe">My projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
