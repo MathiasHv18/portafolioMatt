@@ -21,6 +21,26 @@ p {
   font-size: 1.6rem;
 }
 
+#home > p {
+  width: 50%;
+  text-align: center;
+}
+#home > a > img {
+  width: 160px;
+  margin-top: 10px;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#home h2 {
+  text-align: center;
+}
+
 #home > button {
   color: #a90448;
   border: 1px solid;
@@ -28,6 +48,19 @@ p {
   padding: 10px 20px;
   margin-top: 50px;
   font-size: 1.4rem;
+}
+
+.home > img,
+h1,
+p {
+  margin: 20px;
+}
+
+@media (max-width: 1371px) {
+  #home > p {
+    width: 90%;
+    text-align: center;
+  }
 }
 
 header {
@@ -81,6 +114,34 @@ a .projectIMG {
   width: 60%;
 }
 
+@media (max-width: 1371px) {
+  .myProjects {
+    width: 100%;
+  }
+  .project {
+    flex-direction: column;
+  }
+  .project > h3 {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 2px;
+    margin-bottom: 3px;
+  }
+
+  .project > a {
+    margin-top: 10px;
+    width: 60%;
+    text-align: center;
+  }
+  .project > p {
+    width: 100%;
+    font-size: 1.3rem;
+    text-align: center;
+    justify-content: center;
+  }
+}
 #aboutMe {
   display: flex;
   justify-content: space-between;
@@ -99,6 +160,21 @@ a .projectIMG {
   width: 200px;
   margin: 10px;
 }
+@media (max-width: 1371px) {
+  #aboutMe {
+    flex-direction: column;
+  }
+  .boxSkills {
+    width: 100%;
+  }
+  .myProjects {
+    width: 100%;
+  }
+  .boxSkills img {
+    width: 90px;
+    margin: 10px;
+  }
+}
 
 #helloWorld {
   font-size: 2rem;
@@ -109,11 +185,6 @@ a .projectIMG {
   width: 12ch;
   animation: typing 2s steps(12), blink 0.5s step-end infinite alternate;
   overflow: hidden;
-}
-
-#home > p {
-  width: 50%;
-  text-align: center;
 }
 
 .links > li {
@@ -128,18 +199,6 @@ a .projectIMG {
 }
 .links li a:hover {
   color: aqua;
-}
-
-#home > a > img {
-  width: 160px;
-  margin-top: 10px;
-}
-
-#home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 nav {
@@ -159,12 +218,6 @@ nav {
   border-radius: 30px;
 }
 
-.home > img,
-h1,
-p {
-  margin: 20px;
-}
-
 #contact {
   display: flex;
   flex-direction: column;
@@ -173,6 +226,11 @@ p {
   width: 100%;
 }
 
+#contact > p{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
 .linksSocialMedia ul {
   display: flex;
   list-style: none;
@@ -225,6 +283,20 @@ footer {
 footer > span {
   margin-left: 40px;
 }
+@media (max-width: 1371px) {
+  .linksSocialMedia ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .linksSocialMedia > ul > li > a > img {
+    color: white;
+    width: 30px;
+  }
+}
 
 form {
   width: 40%;
@@ -232,6 +304,15 @@ form {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+@media (max-width: 1371px) {
+  form {
+    width: 90%;
+  }
+  input::placeholder {
+    font-size: 16px;
+  }
 }
 #name,
 #phone {
