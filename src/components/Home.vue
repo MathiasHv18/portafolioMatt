@@ -3,10 +3,10 @@
     <nav>
       <img src="../assets/logo.jpg" alt="logoProfile" id="logoMatt" />
       <ul class="links">
-        <li><a href="#home">Home</a></li>
+        <li><a @click="scrollTo('home')">Home</a></li>
         <!-- <li><a href="#aboutMe">About me</a></li>-->
-        <li><a href="#aboutMe">My projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a @click="scrollTo('aboutMe')">My projects</a></li>
+        <li><a @click="scrollTo('contact')">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -25,7 +25,7 @@
         for new challenges and opportunities to learn new things.
       </p>
       <button @click="downloadCV">Resume</button>
-      <a href="#aboutMe"><img src="../assets/down-arrow.png" /></a>
+      <a @click="scrollTo('aboutMe')"><img src="../assets/down-arrow.png" /></a>
     </section>
 
     <section id="aboutMe">
@@ -165,6 +165,11 @@ export default {
     };
   },
   methods: {
+    scrollTo(id) {
+      const element = document.getElementById(id);
+      const y = element.getBoundingClientRect().top + window.pageYOffset - 110;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    },
     emailSend() {
       const name = this.name;
       const phone = this.phone;
