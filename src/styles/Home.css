@@ -41,14 +41,20 @@ p {
   text-align: center;
 }
 
-#home > button {
+#home > .download {
   color: #a90448;
   border: 1px solid;
   border-radius: 10px;
   padding: 10px 20px;
   margin-top: 50px;
   font-size: 1.4rem;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
 }
+#home > .download:hover {
+  color: #e70777;
+}
+
 
 .home > img,
 h1,

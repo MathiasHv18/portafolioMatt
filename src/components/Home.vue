@@ -24,7 +24,7 @@
         <span class="redWord">software engineering</span>. I am always looking
         for new challenges and opportunities to learn new things.
       </p>
-      <button @click="downloadCV">Resume</button>
+      <a class="download" href="/assets/ResumeHualtibamba.docx" download>Resume</a>
       <a @click="scrollTo('aboutMe')"><img src="../assets/down-arrow.png" /></a>
     </section>
 
