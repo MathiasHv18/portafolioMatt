@@ -24,7 +24,9 @@
         <span class="redWord">software engineering</span>. I am always looking
         for new challenges and opportunities to learn new things.
       </p>
-      <a class="download" href="/assets/ResumeHualtibamba.docx" download>Resume</a>
+      <a class="download" href="/assets/ResumeHualtibamba.docx" download
+        >Resume</a
+      >
       <a @click="scrollTo('aboutMe')"><img src="../assets/down-arrow.png" /></a>
     </section>
 
@@ -41,6 +43,24 @@
 
       <div class="myProjects">
         <h2 class="subTitle">My Projects</h2>
+        <div class="project">
+          <a
+            href="https://github.com/Giorgio6846/TrabajoFinal-IA"
+            target="_blank"
+          >
+            <img
+              class="projectIMG"
+              src="../assets/projectIA.jpg"
+              alt="projectIA"
+          /></a>
+          <h3>Artificial Intelligence project</h3>
+          <p>
+            The project develops an educational bot for blackjack that uses AI
+            to recognize cards, optimize plays, and detect addictive behaviours.
+            Its goal is to teach responsible playing, alert users to potential
+            addictions, and promote healthy gambling practices.
+          </p>
+        </div>
         <div class="project">
           <a href="https://hanzitest.pages.dev/" target="_blank">
             <img class="projectIMG" src="../assets/hanziApp.png" alt="hanziApp"
