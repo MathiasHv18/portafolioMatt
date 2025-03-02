@@ -55,7 +55,6 @@ p {
   color: #e70777;
 }
 
-
 .home > img,
 h1,
 p {
@@ -107,17 +106,70 @@ a .projectIMG {
 
 .project {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  flex-direction: column;
+  width: 350px;
+  background-color: rgba(33, 28, 28, 0.8);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+}
+
+.project > a {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project > h3 {
+  width: 100%;
+  padding: 15px 20px 5px 20px;
+  margin: 0;
+  font-size: 1.5rem;
+  color: #f9006c;
+}
+
+.project > p {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.project > a > .projectIMG {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project:hover .projectIMG {
+  transform: scale(1.1);
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .myProjects {
-  box-sizing: border-box;
-  padding: 20px;
-  justify-content: space-around;
   display: flex;
-  flex-wrap: wrap;
-  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.myProjects .subTitle {
+  margin-bottom: 40px;
 }
 
 @media (max-width: 1371px) {
@@ -149,18 +201,27 @@ a .projectIMG {
   }
 }
 #aboutMe {
-  margin-top: 32px;
   display: flex;
-  justify-content: space-between;
+  margin-top: 50px;
+  flex-direction: column;
 }
 
 .boxSkills {
+  margin-top: 40px;
   box-sizing: border-box;
   padding: 20px;
   justify-content: space-around;
   flex-wrap: wrap;
   display: flex;
-  width: 35%;
+  width: 100%;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 70%;
 }
 
 .boxSkills img {

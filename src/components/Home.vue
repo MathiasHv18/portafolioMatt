@@ -16,7 +16,7 @@
       <img class="avatar" src="../assets/avatar.jpg" alt="avatarMatt" />
       <h1 id="helloWorld">Hello World!</h1>
       <h2>I am <span class="redWord">Mathias Hualtibamba</span></h2>
-      <h2>Software Engineer</h2>
+      <h2>Computer Science</h2>
       <p>
         Currently studying <span class="redWord">Computer Science</span> in
         Peru. I am passionate about
@@ -31,62 +31,76 @@
     </section>
 
     <section id="aboutMe">
-      <div class="boxSkills">
-        <h2 class="subTitle">Skills</h2>
-        <img src="../assets/html.png" alt="htmlLogo" />
-        <img src="../assets/css.png" alt="cssLogo" />
-        <img src="../assets/cpp.png" alt="cppLogo" />
-        <img src="../assets/python.png" alt="pythonLogo" />
-        <img src="../assets/sql.png" alt="sqlLogo" />
-        <img src="../assets/vue.png" alt="vueLogo" />
-      </div>
-
       <div class="myProjects">
         <h2 class="subTitle">My Projects</h2>
-        <div class="project">
-          <a
-            href="https://github.com/Giorgio6846/TrabajoFinal-IA"
-            target="_blank"
-          >
-            <img
-              class="projectIMG"
-              src="../assets/projectIA.jpg"
-              alt="projectIA"
-          /></a>
-          <h3>Artificial Intelligence project</h3>
-          <p>
-            The project develops an educational bot for blackjack that uses AI
-            to recognize cards, optimize plays, and detect addictive behaviours.
-            Its goal is to teach responsible playing, alert users to potential
-            addictions, and promote healthy gambling practices.
-          </p>
+
+        <div class="projects-container">
+          <div class="project">
+            <a
+              href="https://github.com/Giorgio6846/TrabajoFinal-IA"
+              target="_blank"
+            >
+              <img
+                class="projectIMG"
+                src="../assets/projectIA.jpg"
+                alt="projectIA"
+              />
+            </a>
+            <h3>Artificial Intelligence project</h3>
+            <p>
+              Educational bot for blackjack that uses AI to recognize cards,
+              optimize plays, and detect addictive behaviours. It's goal is to
+              teach responsible playing, alert users to potential addictions,
+              and promote healthy gambling practices.
+            </p>
+          </div>
+
+          <div class="project">
+            <a href="https://hanzitest.pages.dev/" target="_blank">
+              <img
+                class="projectIMG"
+                src="../assets/hanziApp.png"
+                alt="hanziApp"
+              />
+            </a>
+            <h3>Hanzi App</h3>
+            <p>
+              Simple yet efficient application created with Vue and Vite. It's
+              purpose is to help you measure your fluency with chinese
+              characters(汉字).
+            </p>
+          </div>
+
+          <div class="project">
+            <a
+              href="https://github.com/Giorgio6846/TrabajoFinal-ComplejidadAlgoritmica"
+              target="_blank"
+            >
+              <img
+                class="projectIMG"
+                src="../assets/censoApp.png"
+                alt="censoApp"
+              />
+            </a>
+            <h3>Census App</h3>
+            <p>
+              An application that simulates a census, utilizing a generated CSV
+              file. It provides infrastructure information about the Peruvian
+              population.
+            </p>
+          </div>
         </div>
-        <div class="project">
-          <a href="https://hanzitest.pages.dev/" target="_blank">
-            <img class="projectIMG" src="../assets/hanziApp.png" alt="hanziApp"
-          /></a>
-          <h3>Hanzi App</h3>
-          <p>
-            Simple yet efficient application created with Vue and Vite. It's
-            purpose is to help you measure your fluency with chinese
-            characters(汉字).
-          </p>
-        </div>
-        <div class="project">
-          <a
-            href="https://github.com/Giorgio6846/TrabajoFinal-ComplejidadAlgoritmica"
-            target="_blank"
-            ><img
-              class="projectIMG"
-              src="../assets/censoApp.png"
-              alt="censoApp"
-          /></a>
-          <h3>Census App</h3>
-          <p>
-            An application that simulates a census, utilizing a generated CSV
-            file. It provides infrastructure information about the Peruvian
-            population.
-          </p>
+      </div>
+
+      <div class="boxSkills">
+        <h2 class="subTitle">Skills</h2>
+        <div class="skills">
+          <img src="../assets/html.png" alt="htmlLogo" />
+          <img src="../assets/css.png" alt="cssLogo" />
+          <img src="../assets/cpp.png" alt="cppLogo" />
+          <img src="../assets/python.png" alt="pythonLogo" />
+          <img src="../assets/sql.png" alt="sqlLogo" />
+          <img src="../assets/vue.png" alt="vueLogo" />
         </div>
       </div>
     </section>
